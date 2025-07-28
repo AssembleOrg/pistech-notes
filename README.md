@@ -1,6 +1,6 @@
 # Pistech Notes - Gestión de Anotaciones y Cobros
 
-Una aplicación web moderna para la gestión de anotaciones, proyectos, cobros de clientes y pagos a socios, construida con React, TypeScript y Material-UI, integrada con un backend NestJS.
+Una aplicación web moderna para la gestión de anotaciones, proyectos, cobros a clientes y pagos a socios, construida con React, TypeScript y Material-UI, integrada con un backend NestJS.
 
 ## 🚀 Características
 
@@ -28,7 +28,7 @@ Una aplicación web moderna para la gestión de anotaciones, proyectos, cobros d
 - Soft delete y restauración
 - Formato de moneda automático en campos de monto
 
-### 💰 Cobros de Clientes
+### 💰 Cobros a Clientes
 - Registro de cobros con múltiples monedas (ARS, USD, EUR)
 - Métodos de pago: Efectivo, Transferencia, Tarjeta, Cheque, Otro
 - Asociación con proyectos específicos
@@ -40,7 +40,7 @@ Una aplicación web moderna para la gestión de anotaciones, proyectos, cobros d
 
 ### 👥 Pagos a Socios
 - Gestión de pagos a colaboradores/partners
-- Mismas funcionalidades que cobros de clientes
+- Mismas funcionalidades que cobros a clientes
 - Seguimiento de pagos por socio
 - Filtros avanzados
 - Tabla paginada con vista detallada
@@ -131,7 +131,7 @@ src/
 │   ├── Dashboard.tsx   # Página principal
 │   ├── Notes.tsx       # Gestión de notas
 │   ├── Projects.tsx    # Gestión de proyectos
-│   ├── ClientCharges.tsx    # Cobros de clientes
+│   ├── ClientCharges.tsx    # Cobros a clientes
 │   ├── PartnerPayments.tsx  # Pagos a socios
 │   ├── Partners.tsx    # Gestión de socios
 │   ├── Logs.tsx        # Registro de actividad
@@ -140,7 +140,7 @@ src/
 │   └── apiService.ts   # Servicio de API para backend
 ├── stores/             # Stores de Zustand
 │   ├── authStore.ts    # Store de autenticación
-│   ├── clientChargeStore.ts # Store de cobros de clientes
+│   ├── clientChargeStore.ts # Store de cobros a clientes
 │   ├── partnerPaymentStore.ts # Store de pagos a socios
 │   ├── projectStore.ts # Store de proyectos
 │   ├── partnerStore.ts # Store de socios
@@ -233,7 +233,7 @@ Para desplegar la aplicación:
 - `PATCH /projects/:id` - Actualizar proyecto
 - `DELETE /projects/:id` - Eliminar proyecto (soft delete)
 
-#### Cobros de Clientes
+#### Cobros a Clientes
 - `GET /client-charges` - Obtener todos los cobros
 - `POST /client-charges` - Crear cobro
 - `PATCH /client-charges/:id` - Actualizar cobro
@@ -269,7 +269,7 @@ Para desplegar la aplicación:
 - [x] Autenticación JWT completa
 - [x] Gestión de notas con CRUD
 - [x] Gestión de proyectos con estados
-- [x] Cobros de clientes con múltiples monedas
+- [x] Cobros a clientes con múltiples monedas
 - [x] Pagos a socios con gestión de partners
 - [x] Gestión de socios con roles
 - [x] Dashboard con métricas
